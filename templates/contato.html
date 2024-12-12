@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link rel="stylesheet" href="../static/style/reset.css">
+    <link rel="stylesheet" href="../static/style/contato.css">
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <div class="container_banner">
+                <img class="banner" src="../static/img/banner.png" alt="Logo">
+            </div>
+            <div class="container_botoes">
+                <a href="home.html" class="button-link"> HOME </a>
+                <a href="livros.html" class="button-link"> LIVROS </a>
+                <a href="contato.html" class="button-link"> CONTATO </a>
+            </div>
+        </div>    
+    </header>
+    
+    <main>
+        <form method="POST" action="contato.html">
+            <p>Ajude-nos a expandir nosso catálogo!</p>
+            <label for="nome_e_sobrenome">Digite o nome de um livro que você gostaria aqui no site!</label>
+            <input class="input_padrao" type="text" id="nome_livro" name="nome_livro" required
+            placeholder="Digite o nome do Livro aqui">
+
+            <label for="email">Digite o nome de autores que você gostaria aqui no site! </label>
+            <input class="input_padrao" type="nome_autor" id="nome_autor" name="nome_autor" required
+            placeholder="Digite o nome do autor aqui">
+
+            <label for="telefone">Digite seu e-mail caso deseje nos ajudar com ideias novas!</label>
+            <input class="input_padrao" type="email" id="email" name="email" required
+            placeholder="email@email.com">
+
+            <label for="mensagem">Deixe uma mensagem para nós!</label>
+            <textarea class="input_padrao" cols="60" rows="10" id="mensagem" name="mensagem" required
+            placeholder="Escreva sua mensagem aqui"></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label class="checkbox" for="radio_email">
+                    <input type="radio" name="contato" value="email" id="radio_email">
+                Email</label>
+                <label class="checkbox" for="radio_telefone">
+                    <input type="radio" name="contato" value="telefone" id="radio_telefone">
+                Telefone</label>
+                <label class="checkbox" for="radio_whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio_whatsapp">
+                Whatsapp</label>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" name="receber_informacoes" checked>
+            Gostaria de receber informações sobre novos livros por e-mail?</label>
+            <input class="enviar" type="submit" value="Enviar Formulário" id=>
+        </form>
+    </main>
+    
+    <footer>
+        <img class="imagem_rodape" src="../static/img/banner.png" alt="Logo">
+        <p class="texto_copyright">&copy; Copyright by LibraryWeb S/A</p>
+    </footer>
+</body>
+</html>

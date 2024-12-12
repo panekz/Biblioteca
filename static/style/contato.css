@@ -1,0 +1,109 @@
+body{
+    padding: 20px 20px;
+    background-color: white;
+    color: white;
+}
+
+header{
+    width: 100%;
+}
+
+.container_header{
+    width: 100%;
+}
+
+.banner{
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+.container_botoes{
+    padding: 20px 10px;
+    margin: 10px;
+    height: 50px;
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+
+.button-link{
+    padding: 15px 0;
+    background-color:lightskyblue;
+    border: 5px solid #01131F;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button-link:hover{
+    padding: 15px 0;
+    background-color:springgreen;
+    color: #01131F;
+    text-align: center;
+    text-decoration: none;
+}
+
+main{
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+form{
+    margin: auto;
+    max-width: 2000px;
+    text-align: center;
+    padding: 20px;
+}
+
+form label, form legend{
+    text-align: left;
+    display: block;
+    font-size: 40px;
+    margin: 0 0 10px;
+    padding: 10px;
+}
+
+.input_padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    font-size: 20px;
+}
+
+.enviar{
+    width: 40%;
+    margin: 40px;
+    padding: 15px 0;
+    background-color: springgreen;
+    color: white;
+    border-color: black;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s all;
+    cursor: pointer;
+    box-shadow: #01131F;
+}
+
+.enviar:hover{
+    background-color: violet;
+    color: #01131F;
+    transform: scale(1.1);
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    padding: 20px 0;
+    color: black;
+}
+
+.imagem_rodape{
+    height: 80px;
+    width: 300px;
+}
